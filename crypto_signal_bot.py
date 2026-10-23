@@ -28,7 +28,7 @@ import requests
 import numpy as np
 import pandas as pd
 
-BASE_URL = "https://api.binance.com"
+BASE_URL = "https://data-api.binance.vision"
 QUOTE_ASSET = "USDT"
 
 MIN_24H_QUOTE_VOLUME = 15_000_000
