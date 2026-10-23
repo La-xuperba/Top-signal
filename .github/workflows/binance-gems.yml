@@ -1,0 +1,50 @@
+name: BINANCE GEMS Pre-Pump Radar
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "*/15 * * * *"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: binance-gems-pre-pump
+  cancel-in-progress: false
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run scanner and send Telegram / Square posts
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          # Leave blank unless you have a documented, authorized Square posting endpoint.
+          BINANCE_SQUARE_API_URL: ${{ secrets.BINANCE_SQUARE_API_URL }}
+          BINANCE_SQUARE_API_TOKEN: ${{ secrets.BINANCE_SQUARE_API_TOKEN }}
+        run: python crypto_signal_bot.py
+
+      - name: Upload scan CSV and Square drafts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: binance-gems-scan-output
+          path: |
+            pre_pump_ranking_*.csv
+            square_drafts.txt
+          if-no-files-found: ignore
+          retention-days: 7
