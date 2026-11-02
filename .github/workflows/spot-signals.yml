@@ -1,56 +1,56 @@
-name: Spot Signals
+name: BINANCE GEMS Spot Radar
 
 on:
-  schedule:
-    - cron: "*/30 * * * *"   # every 30 minutes
   workflow_dispatch:
     inputs:
-      mode:
-        description: "scan = send real signals | dry-run = print only | test = send test message | stats = track record"
-        default: "scan"
-        type: choice
-        options: [scan, dry-run, test, stats]
-
-concurrency:
-  group: spot-signals
-  cancel-in-progress: false
+      force:
+        description: "Resend signals even if already sent today"
+        required: false
+        type: boolean
+        default: false
+  schedule:
+    - cron: "*/15 * * * *"
 
 permissions:
-  contents: read
+  contents: write
+
+concurrency:
+  group: binance-gems-spot-radar
+  cancel-in-progress: false
 
 jobs:
-  run:
+  scan:
     runs-on: ubuntu-latest
-    timeout-minutes: 12
+    timeout-minutes: 20
     steps:
-      - uses: actions/checkout@v4
-
-      - uses: actions/setup-python@v5
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
         with:
           python-version: "3.11"
-          cache: pip
-
-      - run: pip install -r requirements.txt
-
-      # memory between runs: open signals, cooldowns, track record
-      - uses: actions/cache/restore@v4
-        with:
-          path: spot_state.json
-          key: spot-state-${{ github.run_id }}
-          restore-keys: spot-state-
-
-      - name: Run bot
+          cache: "pip"
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+      - name: Run scanner
         env:
           TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
-          # optional repo variables (Settings > Secrets and variables > Actions > Variables)
-          MIN_SCORE: ${{ vars.MIN_SCORE }}
-          MIN_QUOTE_VOL: ${{ vars.MIN_QUOTE_VOL }}
-          EXCLUDE: ${{ vars.EXCLUDE }}
-        run: python spot_signal_bot.py --${{ github.event.inputs.mode || 'scan' }}
-
-      - uses: actions/cache/save@v4
-        if: always() && hashFiles('spot_state.json') != ''
-        with:
-          path: spot_state.json
-          key: spot-state-${{ github.run_id }}
+          STATE_FILE: state_binance.json
+          MIN_SCORE: "45"
+          MAX_24H_CHANGE_PCT: "15"
+        run: |
+          if [ "${{ inputs.force }}" = "true" ]; then
+            python binance_bot.py --watch 12 --force
+          else
+            python binance_bot.py --watch 12
+          fi
+      - name: Save duplicate-prevention state
+        run: |
+          if [ -f state_binance.json ]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add -f state_binance.json
+            git diff --cached --quiet || git commit -m "Update Binance Gems signal state"
+            git push
+          fi
