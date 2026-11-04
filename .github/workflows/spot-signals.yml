@@ -1,0 +1,57 @@
+name: Spot Signals
+
+on:
+  schedule:
+    - cron: "*/30 * * * *"   # every 30 minutes
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: "scan = send real signals | dry-run = print only | test = Telegram test | square-test = post 1 test line on Binance Square | stats = track record"
+        default: "scan"
+        type: choice
+        options: [scan, dry-run, test, stats, square-test]
+
+concurrency:
+  group: spot-signals
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+
+      - run: pip install -r requirements.txt
+
+      # memory between runs: open signals, cooldowns, track record
+      - uses: actions/cache/restore@v4
+        with:
+          path: spot_state.json
+          key: spot-state-${{ github.run_id }}
+          restore-keys: spot-state-
+
+      - name: Run bot
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          BINANCE_SQUARE_OPENAPI_KEY: ${{ secrets.BINANCE_SQUARE_OPENAPI_KEY }}  # optional: enables Binance Square posts
+          # optional repo variables (Settings > Secrets and variables > Actions > Variables)
+          MIN_SCORE: ${{ vars.MIN_SCORE }}
+          MIN_QUOTE_VOL: ${{ vars.MIN_QUOTE_VOL }}
+          EXCLUDE: ${{ vars.EXCLUDE }}
+        run: python spot_signal_bot.py --${{ github.event.inputs.mode || 'scan' }}
+
+      - uses: actions/cache/save@v4
+        if: always() && hashFiles('spot_state.json') != ''
+        with:
+          path: spot_state.json
+          key: spot-state-${{ github.run_id }}
