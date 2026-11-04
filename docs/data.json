@@ -1,0 +1,65 @@
+{
+  "updated_at": "2026-11-04T18:10:41.114075+00:00",
+  "scan": {
+    "eligible_pairs": 509,
+    "analyzed_pairs": 508,
+    "watch_count": 1,
+    "buy_candidates": 0,
+    "btc_bullish": false,
+    "duration_seconds": 15.5,
+    "scan_count": 1
+  },
+  "candidates": [
+    {
+      "symbol": "C98USDT",
+      "base": "C98",
+      "price": 0.01268,
+      "change_24h": 1.12,
+      "quote_volume_24h": 194983.06,
+      "market_cap": null,
+      "market_cap_source": null,
+      "turnover_pct": null,
+      "turnover_threshold_pct": null,
+      "score": 65,
+      "status": "WATCH",
+      "hard_filters": [
+        "BTC regime weak"
+      ],
+      "score_breakdown": {
+        "structure": 7,
+        "volume": 15,
+        "ema": 10,
+        "momentum": 10,
+        "accumulation": 10,
+        "liquidity": 10,
+        "turnover": 0,
+        "btc": 0,
+        "resistance_room": 3
+      },
+      "timeframes": {
+        "15m": {
+          "rsi": 52.6,
+          "volume_ratio": 2.85
+        },
+        "1h": {
+          "rsi": 55.0,
+          "ema20": 0.012571869064784613,
+          "obv_rising": true
+        },
+        "4h": {
+          "ema50": 0.013166181725696,
+          "higher_low": true
+        }
+      },
+      "entry": 0.01273,
+      "stop_loss": 0.01238,
+      "tp1": 0.01343,
+      "tp2": 0.01378,
+      "tp3": 0.01413,
+      "position_usd": 250.0,
+      "risk_pct": 0.75,
+      "resistance_room_pct": 2.44,
+      "updated_at": "2026-11-04T18:10:33.046861+00:00"
+    }
+  ]
+}
