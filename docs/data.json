@@ -1,13 +1,13 @@
 {
-  "updated_at": "2026-11-06T07:52:00.063375+00:00",
+  "updated_at": "2026-11-06T15:48:44.911823+00:00",
   "scan": {
     "eligible_pairs": 509,
-    "analyzed_pairs": 507,
+    "analyzed_pairs": 503,
     "watch_count": 0,
     "buy_candidates": 0,
     "btc_bullish": false,
-    "duration_seconds": 13.9,
-    "scan_count": 8
+    "duration_seconds": 12.5,
+    "scan_count": 9
   },
   "candidates": []
 }
