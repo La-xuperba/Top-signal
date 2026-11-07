@@ -1,65 +1,13 @@
 {
-  "updated_at": "2026-11-07T14:09:43.879447+00:00",
+  "updated_at": "2026-11-07T18:49:37.239090+00:00",
   "scan": {
     "eligible_pairs": 509,
-    "analyzed_pairs": 506,
-    "watch_count": 1,
+    "analyzed_pairs": 507,
+    "watch_count": 0,
     "buy_candidates": 0,
     "btc_bullish": false,
-    "duration_seconds": 10.8,
-    "scan_count": 13
+    "duration_seconds": 14.5,
+    "scan_count": 14
   },
-  "candidates": [
-    {
-      "symbol": "BBBUSDT",
-      "base": "BBB",
-      "price": 8.74,
-      "change_24h": 1.27,
-      "quote_volume_24h": 65135.77,
-      "market_cap": null,
-      "market_cap_source": null,
-      "turnover_pct": null,
-      "turnover_threshold_pct": null,
-      "score": 70,
-      "status": "WATCH",
-      "hard_filters": [
-        "BTC regime weak"
-      ],
-      "score_breakdown": {
-        "structure": 20,
-        "volume": 15,
-        "ema": 10,
-        "momentum": 5,
-        "accumulation": 10,
-        "liquidity": 10,
-        "turnover": 0,
-        "btc": 0,
-        "resistance_room": 0
-      },
-      "timeframes": {
-        "15m": {
-          "rsi": 51.5,
-          "volume_ratio": 2.62
-        },
-        "1h": {
-          "rsi": 56.6,
-          "ema20": 8.712532372096566,
-          "obv_rising": true
-        },
-        "4h": {
-          "ema50": 8.539955496235049,
-          "higher_low": true
-        }
-      },
-      "entry": 8.74,
-      "stop_loss": 8.67445,
-      "tp1": 8.8711,
-      "tp2": 8.93665,
-      "tp3": 9.0022,
-      "position_usd": 250.0,
-      "risk_pct": 0.75,
-      "resistance_room_pct": 1.83,
-      "updated_at": "2026-11-07T14:09:43.721114+00:00"
-    }
-  ]
+  "candidates": []
 }
