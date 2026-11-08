@@ -1,13 +1,66 @@
 {
-  "updated_at": "2026-11-07T22:35:21.135899+00:00",
+  "updated_at": "2026-11-08T01:52:28.412297+00:00",
   "scan": {
     "eligible_pairs": 509,
-    "analyzed_pairs": 506,
-    "watch_count": 0,
+    "analyzed_pairs": 508,
+    "watch_count": 1,
     "buy_candidates": 0,
     "btc_bullish": false,
-    "duration_seconds": 14.7,
-    "scan_count": 15
+    "duration_seconds": 14.0,
+    "scan_count": 16
   },
-  "candidates": []
+  "candidates": [
+    {
+      "symbol": "JSTUSDT",
+      "base": "JST",
+      "price": 0.14421,
+      "change_24h": 0.53,
+      "quote_volume_24h": 1256612.48,
+      "market_cap": 1153123627.0,
+      "market_cap_source": "CoinGecko",
+      "turnover_pct": 0.11,
+      "turnover_threshold_pct": 2.0,
+      "score": 71.9,
+      "status": "WATCH",
+      "hard_filters": [
+        "Major resistance too close",
+        "BTC regime weak"
+      ],
+      "score_breakdown": {
+        "structure": 20,
+        "volume": 14.9,
+        "ema": 10,
+        "momentum": 7,
+        "accumulation": 10,
+        "liquidity": 10,
+        "turnover": 0,
+        "btc": 0,
+        "resistance_room": 0
+      },
+      "timeframes": {
+        "15m": {
+          "rsi": 74.7,
+          "volume_ratio": 2.49
+        },
+        "1h": {
+          "rsi": 66.1,
+          "ema20": 0.14348676342685793,
+          "obv_rising": true
+        },
+        "4h": {
+          "ema50": 0.14120702367432725,
+          "higher_low": true
+        }
+      },
+      "entry": 0.14423,
+      "stop_loss": 0.143148275,
+      "tp1": 0.14639345,
+      "tp2": 0.147475175,
+      "tp3": 0.1485569,
+      "position_usd": 250.0,
+      "risk_pct": 0.75,
+      "resistance_room_pct": -0.1,
+      "updated_at": "2026-11-08T01:52:20.020102+00:00"
+    }
+  ]
 }
