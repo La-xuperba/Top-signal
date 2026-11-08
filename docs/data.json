@@ -1,13 +1,117 @@
 {
-  "updated_at": "2026-11-08T08:46:35.539587+00:00",
+  "updated_at": "2026-11-08T15:53:05.739131+00:00",
   "scan": {
     "eligible_pairs": 509,
     "analyzed_pairs": 508,
-    "watch_count": 0,
+    "watch_count": 2,
     "buy_candidates": 0,
     "btc_bullish": false,
     "duration_seconds": 14.5,
-    "scan_count": 17
+    "scan_count": 18
   },
-  "candidates": []
+  "candidates": [
+    {
+      "symbol": "DGBUSDT",
+      "base": "DGB",
+      "price": 0.00341,
+      "change_24h": 8.95,
+      "quote_volume_24h": 1293631.06,
+      "market_cap": 62934649.0,
+      "market_cap_source": "CoinGecko",
+      "turnover_pct": 2.06,
+      "turnover_threshold_pct": 5.0,
+      "score": 74,
+      "status": "WATCH",
+      "hard_filters": [
+        "BTC regime weak"
+      ],
+      "score_breakdown": {
+        "structure": 20,
+        "volume": 15,
+        "ema": 10,
+        "momentum": 8,
+        "accumulation": 6,
+        "liquidity": 10,
+        "turnover": 0,
+        "btc": 0,
+        "resistance_room": 5
+      },
+      "timeframes": {
+        "15m": {
+          "rsi": 56.5,
+          "volume_ratio": 3.92
+        },
+        "1h": {
+          "rsi": 59.2,
+          "ema20": 0.003298096123624623,
+          "obv_rising": true
+        },
+        "4h": {
+          "ema50": 0.0031750381185774537,
+          "higher_low": true
+        }
+      },
+      "entry": 0.00341,
+      "stop_loss": 0.00321,
+      "tp1": 0.00381,
+      "tp2": 0.00401,
+      "tp3": 0.00421,
+      "position_usd": 127.88,
+      "risk_pct": 0.75,
+      "resistance_room_pct": 5.57,
+      "updated_at": "2026-11-08T15:52:56.757975+00:00"
+    },
+    {
+      "symbol": "DASHUSDT",
+      "base": "DASH",
+      "price": 47.65,
+      "change_24h": 3.72,
+      "quote_volume_24h": 2082784.55,
+      "market_cap": 611478205.0,
+      "market_cap_source": "CoinGecko",
+      "turnover_pct": 0.34,
+      "turnover_threshold_pct": 2.0,
+      "score": 66,
+      "status": "WATCH",
+      "hard_filters": [
+        "Major resistance too close",
+        "BTC regime weak"
+      ],
+      "score_breakdown": {
+        "structure": 14,
+        "volume": 15,
+        "ema": 10,
+        "momentum": 7,
+        "accumulation": 10,
+        "liquidity": 10,
+        "turnover": 0,
+        "btc": 0,
+        "resistance_room": 0
+      },
+      "timeframes": {
+        "15m": {
+          "rsi": 68.2,
+          "volume_ratio": 3.08
+        },
+        "1h": {
+          "rsi": 60.9,
+          "ema20": 46.97637162446836,
+          "obv_rising": true
+        },
+        "4h": {
+          "ema50": 47.48672810725713,
+          "higher_low": true
+        }
+      },
+      "entry": 47.77,
+      "stop_loss": 46.46,
+      "tp1": 50.39,
+      "tp2": 51.7,
+      "tp3": 53.01,
+      "position_usd": 250.0,
+      "risk_pct": 0.75,
+      "resistance_room_pct": 0.4,
+      "updated_at": "2026-11-08T15:52:55.793516+00:00"
+    }
+  ]
 }
