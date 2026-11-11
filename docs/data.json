@@ -1,26 +1,26 @@
 {
-  "updated_at": "2026-11-11T01:24:58.205672+00:00",
+  "updated_at": "2026-11-11T08:10:55.189334+00:00",
   "scan": {
     "eligible_pairs": 509,
-    "analyzed_pairs": 506,
-    "watch_count": 7,
+    "analyzed_pairs": 507,
+    "watch_count": 9,
     "buy_candidates": 0,
     "btc_bullish": false,
-    "duration_seconds": 10.4,
-    "scan_count": 27
+    "duration_seconds": 10.5,
+    "scan_count": 28
   },
   "candidates": [
     {
-      "symbol": "SKHYBUSDT",
-      "base": "SKHYB",
-      "price": 134.67,
-      "change_24h": 0.96,
-      "quote_volume_24h": 8024553.41,
-      "market_cap": 21898063.0,
+      "symbol": "TQQQBUSDT",
+      "base": "TQQQB",
+      "price": 59.15,
+      "change_24h": 2.42,
+      "quote_volume_24h": 9245158.33,
+      "market_cap": 24702987.0,
       "market_cap_source": "CoinGecko",
-      "turnover_pct": 36.65,
+      "turnover_pct": 37.43,
       "turnover_threshold_pct": 5.0,
-      "score": 75.6,
+      "score": 79,
       "status": "WATCH",
       "hard_filters": [
         "Major resistance too close",
@@ -28,9 +28,9 @@
       ],
       "score_breakdown": {
         "structure": 14,
-        "volume": 14.6,
+        "volume": 15,
         "ema": 10,
-        "momentum": 7,
+        "momentum": 10,
         "accumulation": 10,
         "liquidity": 10,
         "turnover": 10,
@@ -39,35 +39,35 @@
       },
       "timeframes": {
         "15m": {
-          "rsi": 72.2,
-          "volume_ratio": 2.46
+          "rsi": 64.6,
+          "volume_ratio": 3.11
         },
         "1h": {
-          "rsi": 60.2,
-          "ema20": 131.6437664791604,
+          "rsi": 66.5,
+          "ema20": 57.890318553702386,
           "obv_rising": true
         },
         "4h": {
-          "ema50": 134.2623351068913,
+          "ema50": 56.935509815130416,
           "higher_low": true
         }
       },
-      "entry": 134.63,
-      "stop_loss": 129.26,
-      "tp1": 145.37,
-      "tp2": 150.74,
-      "tp3": 156.11,
-      "position_usd": 188.03,
+      "entry": 59.19,
+      "stop_loss": 58.16,
+      "tp1": 61.25,
+      "tp2": 62.28,
+      "tp3": 63.31,
+      "position_usd": 250.0,
       "risk_pct": 0.75,
-      "resistance_room_pct": 0.84,
-      "updated_at": "2026-11-11T01:24:57.103342+00:00"
+      "resistance_room_pct": 0.22,
+      "updated_at": "2026-11-11T08:10:54.272641+00:00"
     },
     {
-      "symbol": "SHAZBUSDT",
-      "base": "SHAZB",
-      "price": 24.17,
-      "change_24h": 1.09,
-      "quote_volume_24h": 260529.43,
+      "symbol": "GNSUSDT",
+      "base": "GNS",
+      "price": 0.408,
+      "change_24h": 9.09,
+      "quote_volume_24h": 1117674.48,
       "market_cap": null,
       "market_cap_source": null,
       "turnover_pct": null,
@@ -81,204 +81,202 @@
         "structure": 20,
         "volume": 15,
         "ema": 10,
-        "momentum": 10,
+        "momentum": 7,
         "accumulation": 10,
         "liquidity": 10,
         "turnover": 0,
+        "btc": 0,
+        "resistance_room": 3
+      },
+      "timeframes": {
+        "15m": {
+          "rsi": 69.2,
+          "volume_ratio": 2.99
+        },
+        "1h": {
+          "rsi": 64.7,
+          "ema20": 0.3783223182549142,
+          "obv_rising": true
+        },
+        "4h": {
+          "ema50": 0.38076781897560824,
+          "higher_low": true
+        }
+      },
+      "entry": 0.41,
+      "stop_loss": 0.362,
+      "tp1": 0.506,
+      "tp2": 0.554,
+      "tp3": 0.602,
+      "position_usd": 64.06,
+      "risk_pct": 0.75,
+      "resistance_room_pct": 2.95,
+      "updated_at": "2026-11-11T08:10:50.602348+00:00"
+    },
+    {
+      "symbol": "HOMEUSDT",
+      "base": "HOME",
+      "price": 0.00556,
+      "change_24h": 6.11,
+      "quote_volume_24h": 1020280.22,
+      "market_cap": 24245176.0,
+      "market_cap_source": "CoinGecko",
+      "turnover_pct": 4.21,
+      "turnover_threshold_pct": 5.0,
+      "score": 73.3,
+      "status": "WATCH",
+      "hard_filters": [
+        "Major resistance too close",
+        "BTC regime weak"
+      ],
+      "score_breakdown": {
+        "structure": 20,
+        "volume": 10.3,
+        "ema": 10,
+        "momentum": 10,
+        "accumulation": 10,
+        "liquidity": 10,
+        "turnover": 3,
         "btc": 0,
         "resistance_room": 0
       },
       "timeframes": {
         "15m": {
-          "rsi": 65.8,
-          "volume_ratio": 3.5
+          "rsi": 64.7,
+          "volume_ratio": 2.03
         },
         "1h": {
-          "rsi": 59.1,
-          "ema20": 23.581145738956344,
+          "rsi": 66.1,
+          "ema20": 0.005446425947499466,
           "obv_rising": true
         },
         "4h": {
-          "ema50": 22.75519533577897,
+          "ema50": 0.005336880976791748,
           "higher_low": true
         }
       },
-      "entry": 24.21,
-      "stop_loss": 23.06,
-      "tp1": 26.51,
-      "tp2": 27.66,
-      "tp3": 28.81,
-      "position_usd": 157.89,
+      "entry": 0.00558,
+      "stop_loss": 0.00545,
+      "tp1": 0.00584,
+      "tp2": 0.00597,
+      "tp3": 0.0061,
+      "position_usd": 250.0,
       "risk_pct": 0.75,
-      "resistance_room_pct": 1.74,
-      "updated_at": "2026-11-11T01:24:57.901300+00:00"
+      "resistance_room_pct": 0.0,
+      "updated_at": "2026-11-11T08:10:52.561230+00:00"
     },
     {
-      "symbol": "PEPEUSDT",
-      "base": "PEPE",
-      "price": 5.43e-06,
-      "change_24h": 5.03,
-      "quote_volume_24h": 96305546.21,
-      "market_cap": 2279181313.0,
+      "symbol": "MSTRBUSDT",
+      "base": "MSTRB",
+      "price": 123.08,
+      "change_24h": -2.12,
+      "quote_volume_24h": 9629256.41,
+      "market_cap": 44869545.0,
       "market_cap_source": "CoinGecko",
-      "turnover_pct": 4.23,
-      "turnover_threshold_pct": 2.0,
-      "score": 70,
+      "turnover_pct": 21.46,
+      "turnover_threshold_pct": 5.0,
+      "score": 67.5,
       "status": "WATCH",
       "hard_filters": [
-        "No volume confirmation",
         "BTC regime weak"
       ],
       "score_breakdown": {
-        "structure": 20,
-        "volume": 0,
-        "ema": 10,
+        "structure": 7,
+        "volume": 10.5,
+        "ema": 7,
         "momentum": 10,
         "accumulation": 10,
-        "liquidity": 7,
+        "liquidity": 10,
         "turnover": 10,
         "btc": 0,
         "resistance_room": 3
       },
       "timeframes": {
         "15m": {
-          "rsi": 60.0,
-          "volume_ratio": 0.38
+          "rsi": 60.3,
+          "volume_ratio": 2.05
         },
         "1h": {
-          "rsi": 59.5,
-          "ema20": 5.304277677940927e-06,
+          "rsi": 51.7,
+          "ema20": 122.4854521996384,
           "obv_rising": true
         },
         "4h": {
-          "ema50": 5.037238838821439e-06,
+          "ema50": 128.61423221056316,
           "higher_low": true
         }
       },
-      "entry": 5.42e-06,
-      "stop_loss": 5.2e-06,
-      "tp1": 5.86e-06,
-      "tp2": 6.08e-06,
-      "tp3": 6.3e-06,
-      "position_usd": 184.77,
-      "risk_pct": 0.75,
-      "resistance_room_pct": 3.69,
-      "updated_at": "2026-11-11T01:24:54.120556+00:00"
-    },
-    {
-      "symbol": "NOKBUSDT",
-      "base": "NOKB",
-      "price": 8.36,
-      "change_24h": 2.08,
-      "quote_volume_24h": 93311.77,
-      "market_cap": null,
-      "market_cap_source": null,
-      "turnover_pct": null,
-      "turnover_threshold_pct": null,
-      "score": 70,
-      "status": "WATCH",
-      "hard_filters": [
-        "Major resistance too close",
-        "BTC regime weak"
-      ],
-      "score_breakdown": {
-        "structure": 20,
-        "volume": 15,
-        "ema": 10,
-        "momentum": 5,
-        "accumulation": 10,
-        "liquidity": 10,
-        "turnover": 0,
-        "btc": 0,
-        "resistance_room": 0
-      },
-      "timeframes": {
-        "15m": {
-          "rsi": 68.5,
-          "volume_ratio": 5.69
-        },
-        "1h": {
-          "rsi": 61.2,
-          "ema20": 8.241220682798186,
-          "obv_rising": true
-        },
-        "4h": {
-          "ema50": 8.063333065329086,
-          "higher_low": true
-        }
-      },
-      "entry": 8.37,
-      "stop_loss": 8.21,
-      "tp1": 8.69,
-      "tp2": 8.85,
-      "tp3": 9.01,
+      "entry": 123.24,
+      "stop_loss": 121.7,
+      "tp1": 126.32,
+      "tp2": 127.86,
+      "tp3": 129.4,
       "position_usd": 250.0,
       "risk_pct": 0.75,
-      "resistance_room_pct": 0.36,
-      "updated_at": "2026-11-11T01:24:57.210785+00:00"
+      "resistance_room_pct": 2.67,
+      "updated_at": "2026-11-11T08:10:53.767759+00:00"
     },
     {
-      "symbol": "TSMBUSDT",
-      "base": "TSMB",
-      "price": 402.38,
-      "change_24h": 3.53,
-      "quote_volume_24h": 857719.49,
+      "symbol": "ASTSBUSDT",
+      "base": "ASTSB",
+      "price": 34.89,
+      "change_24h": -5.47,
+      "quote_volume_24h": 344656.21,
       "market_cap": null,
       "market_cap_source": null,
       "turnover_pct": null,
       "turnover_threshold_pct": null,
-      "score": 66.9,
+      "score": 67,
       "status": "WATCH",
       "hard_filters": [
-        "Major resistance too close",
         "BTC regime weak"
       ],
       "score_breakdown": {
         "structure": 14,
-        "volume": 12.9,
-        "ema": 10,
+        "volume": 15,
+        "ema": 7,
         "momentum": 10,
-        "accumulation": 10,
+        "accumulation": 6,
         "liquidity": 10,
         "turnover": 0,
         "btc": 0,
-        "resistance_room": 0
+        "resistance_room": 5
       },
       "timeframes": {
         "15m": {
-          "rsi": 64.6,
-          "volume_ratio": 2.29
+          "rsi": 61.4,
+          "volume_ratio": 2.63
         },
         "1h": {
-          "rsi": 63.5,
-          "ema20": 395.4019150128323,
+          "rsi": 52.1,
+          "ema20": 34.62262693834119,
           "obv_rising": true
         },
         "4h": {
-          "ema50": 389.9853668088169,
+          "ema50": 34.866701635681515,
           "higher_low": true
         }
       },
-      "entry": 402.38,
-      "stop_loss": 395.47,
-      "tp1": 416.2,
-      "tp2": 423.11,
-      "tp3": 430.02,
+      "entry": 34.91,
+      "stop_loss": 34.4,
+      "tp1": 35.93,
+      "tp2": 36.44,
+      "tp3": 36.95,
       "position_usd": 250.0,
       "risk_pct": 0.75,
-      "resistance_room_pct": 0.08,
-      "updated_at": "2026-11-11T01:24:57.217755+00:00"
+      "resistance_room_pct": 5.5,
+      "updated_at": "2026-11-11T08:10:54.463625+00:00"
     },
     {
-      "symbol": "EWYBUSDT",
-      "base": "EWYB",
-      "price": 143.01,
-      "change_24h": 1.52,
-      "quote_volume_24h": 910662.9,
-      "market_cap": null,
-      "market_cap_source": null,
-      "turnover_pct": null,
-      "turnover_threshold_pct": null,
+      "symbol": "TSLABUSDT",
+      "base": "TSLAB",
+      "price": 386.1,
+      "change_24h": 2.27,
+      "quote_volume_24h": 3646488.45,
+      "market_cap": 19008947.0,
+      "market_cap_source": "CoinGecko",
+      "turnover_pct": 19.18,
+      "turnover_threshold_pct": 5.0,
       "score": 66,
       "status": "WATCH",
       "hard_filters": [
@@ -286,11 +284,165 @@
         "BTC regime weak"
       ],
       "score_breakdown": {
+        "structure": 20,
+        "volume": 7,
+        "ema": 10,
+        "momentum": 5,
+        "accumulation": 4,
+        "liquidity": 10,
+        "turnover": 10,
+        "btc": 0,
+        "resistance_room": 0
+      },
+      "timeframes": {
+        "15m": {
+          "rsi": 60.1,
+          "volume_ratio": 1.56
+        },
+        "1h": {
+          "rsi": 68.1,
+          "ema20": 382.03433748255617,
+          "obv_rising": false
+        },
+        "4h": {
+          "ema50": 374.1829724945769,
+          "higher_low": true
+        }
+      },
+      "entry": 386.25,
+      "stop_loss": 383.353125,
+      "tp1": 392.04375,
+      "tp2": 394.940625,
+      "tp3": 397.8375,
+      "position_usd": 250.0,
+      "risk_pct": 0.75,
+      "resistance_room_pct": 0.39,
+      "updated_at": "2026-11-11T08:10:53.687393+00:00"
+    },
+    {
+      "symbol": "\u725b\u6765USDT",
+      "base": "\u725b\u6765",
+      "price": 0.05818,
+      "change_24h": 4.15,
+      "quote_volume_24h": 4183544.64,
+      "market_cap": 57742190.0,
+      "market_cap_source": "CoinGecko",
+      "turnover_pct": 7.25,
+      "turnover_threshold_pct": 5.0,
+      "score": 65,
+      "status": "WATCH",
+      "hard_filters": [
+        "BTC regime weak"
+      ],
+      "score_breakdown": {
         "structure": 14,
+        "volume": 7,
+        "ema": 10,
+        "momentum": 8,
+        "accumulation": 4,
+        "liquidity": 10,
+        "turnover": 7,
+        "btc": 0,
+        "resistance_room": 5
+      },
+      "timeframes": {
+        "15m": {
+          "rsi": 52.2,
+          "volume_ratio": 1.65
+        },
+        "1h": {
+          "rsi": 52.1,
+          "ema20": 0.057894868812024894,
+          "obv_rising": false
+        },
+        "4h": {
+          "ema50": 0.058120057113732464,
+          "higher_low": true
+        }
+      },
+      "entry": 0.05825,
+      "stop_loss": 0.05653,
+      "tp1": 0.06169,
+      "tp2": 0.06341,
+      "tp3": 0.06513,
+      "position_usd": 250.0,
+      "risk_pct": 0.75,
+      "resistance_room_pct": 6.57,
+      "updated_at": "2026-11-11T08:10:54.720886+00:00"
+    },
+    {
+      "symbol": "PHAUSDT",
+      "base": "PHA",
+      "price": 0.0352,
+      "change_24h": 2.33,
+      "quote_volume_24h": 1392033.73,
+      "market_cap": 30644184.0,
+      "market_cap_source": "CoinGecko",
+      "turnover_pct": 4.54,
+      "turnover_threshold_pct": 5.0,
+      "score": 65,
+      "status": "WATCH",
+      "hard_filters": [
+        "BTC regime weak"
+      ],
+      "score_breakdown": {
+        "structure": 7,
         "volume": 15,
         "ema": 10,
-        "momentum": 7,
+        "momentum": 10,
         "accumulation": 10,
+        "liquidity": 10,
+        "turnover": 3,
+        "btc": 0,
+        "resistance_room": 0
+      },
+      "timeframes": {
+        "15m": {
+          "rsi": 54.9,
+          "volume_ratio": 3.63
+        },
+        "1h": {
+          "rsi": 58.0,
+          "ema20": 0.03479616204440716,
+          "obv_rising": true
+        },
+        "4h": {
+          "ema50": 0.03676462076035488,
+          "higher_low": true
+        }
+      },
+      "entry": 0.0352,
+      "stop_loss": 0.0347,
+      "tp1": 0.0362,
+      "tp2": 0.0367,
+      "tp3": 0.0372,
+      "position_usd": 250.0,
+      "risk_pct": 0.75,
+      "resistance_room_pct": 1.42,
+      "updated_at": "2026-11-11T08:10:49.769889+00:00"
+    },
+    {
+      "symbol": "OPGUSDT",
+      "base": "OPG",
+      "price": 0.1303,
+      "change_24h": 1.48,
+      "quote_volume_24h": 970972.27,
+      "market_cap": 31276151.0,
+      "market_cap_source": "CoinGecko",
+      "turnover_pct": 3.1,
+      "turnover_threshold_pct": 5.0,
+      "score": 65,
+      "status": "WATCH",
+      "hard_filters": [
+        "Major resistance too close",
+        "BTC regime weak"
+      ],
+      "score_breakdown": {
+        "structure": 20,
+        "volume": 15,
+        "ema": 10,
+        "momentum": 10,
+        "accumulation": 0,
         "liquidity": 10,
         "turnover": 0,
         "btc": 0,
@@ -298,79 +450,28 @@
       },
       "timeframes": {
         "15m": {
-          "rsi": 73.9,
-          "volume_ratio": 3.13
+          "rsi": 64.2,
+          "volume_ratio": 8.01
         },
         "1h": {
-          "rsi": 62.4,
-          "ema20": 140.56375028594513,
-          "obv_rising": true
+          "rsi": 58.1,
+          "ema20": 0.12842828185793517,
+          "obv_rising": false
         },
         "4h": {
-          "ema50": 142.62091075236586,
+          "ema50": 0.12302035348905076,
           "higher_low": true
         }
       },
-      "entry": 143.01,
-      "stop_loss": 138.7,
-      "tp1": 151.63,
-      "tp2": 155.94,
-      "tp3": 160.25,
-      "position_usd": 248.86,
+      "entry": 0.1303,
+      "stop_loss": 0.126,
+      "tp1": 0.1389,
+      "tp2": 0.1432,
+      "tp3": 0.1475,
+      "position_usd": 227.27,
       "risk_pct": 0.75,
-      "resistance_room_pct": -0.11,
-      "updated_at": "2026-11-11T01:24:56.813065+00:00"
-    },
-    {
-      "symbol": "ARBUSDT",
-      "base": "ARB",
-      "price": 0.1636,
-      "change_24h": -5.98,
-      "quote_volume_24h": 19809432.39,
-      "market_cap": 1126090312.0,
-      "market_cap_source": "CoinGecko",
-      "turnover_pct": 1.76,
-      "turnover_threshold_pct": 2.0,
-      "score": 65.7,
-      "status": "WATCH",
-      "hard_filters": [
-        "BTC regime weak"
-      ],
-      "score_breakdown": {
-        "structure": 13,
-        "volume": 12.7,
-        "ema": 7,
-        "momentum": 5,
-        "accumulation": 10,
-        "liquidity": 10,
-        "turnover": 3,
-        "btc": 0,
-        "resistance_room": 5
-      },
-      "timeframes": {
-        "15m": {
-          "rsi": 66.7,
-          "volume_ratio": 2.27
-        },
-        "1h": {
-          "rsi": 47.0,
-          "ema20": 0.16342172692745602,
-          "obv_rising": true
-        },
-        "4h": {
-          "ema50": 0.1665432637200512,
-          "higher_low": true
-        }
-      },
-      "entry": 0.1641,
-      "stop_loss": 0.1582,
-      "tp1": 0.1759,
-      "tp2": 0.1818,
-      "tp3": 0.1877,
-      "position_usd": 208.6,
-      "risk_pct": 0.75,
-      "resistance_room_pct": 5.87,
-      "updated_at": "2026-11-11T01:24:54.056209+00:00"
+      "resistance_room_pct": 0.69,
+      "updated_at": "2026-11-11T08:10:53.591965+00:00"
     }
   ]
 }
