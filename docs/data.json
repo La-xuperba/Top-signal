@@ -1,118 +1,13 @@
 {
-  "updated_at": "2026-11-12T11:54:16.883933+00:00",
+  "updated_at": "2026-11-12T19:43:03.799993+00:00",
   "scan": {
     "eligible_pairs": 509,
-    "analyzed_pairs": 508,
-    "watch_count": 2,
+    "analyzed_pairs": 507,
+    "watch_count": 0,
     "buy_candidates": 0,
     "btc_bullish": false,
-    "duration_seconds": 12.9,
-    "scan_count": 32
+    "duration_seconds": 10.9,
+    "scan_count": 33
   },
-  "candidates": [
-    {
-      "symbol": "ONEUSDT",
-      "base": "ONE",
-      "price": 0.001676,
-      "change_24h": 8.62,
-      "quote_volume_24h": 11487548.9,
-      "market_cap": 61387158.0,
-      "market_cap_source": "CoinGecko",
-      "turnover_pct": 18.71,
-      "turnover_threshold_pct": 5.0,
-      "score": 68,
-      "status": "WATCH",
-      "hard_filters": [
-        "No volume confirmation",
-        "BTC regime weak"
-      ],
-      "score_breakdown": {
-        "structure": 20,
-        "volume": 0,
-        "ema": 10,
-        "momentum": 10,
-        "accumulation": 6,
-        "liquidity": 7,
-        "turnover": 10,
-        "btc": 0,
-        "resistance_room": 5
-      },
-      "timeframes": {
-        "15m": {
-          "rsi": 56.9,
-          "volume_ratio": 0.32
-        },
-        "1h": {
-          "rsi": 61.1,
-          "ema20": 0.00156889828514139,
-          "obv_rising": true
-        },
-        "4h": {
-          "ema50": 0.001557907855225596,
-          "higher_low": true
-        }
-      },
-      "entry": 0.001676,
-      "stop_loss": 0.00145,
-      "tp1": 0.002128,
-      "tp2": 0.002354,
-      "tp3": 0.00258,
-      "position_usd": 55.62,
-      "risk_pct": 0.75,
-      "resistance_room_pct": 6.68,
-      "updated_at": "2026-11-12T11:54:08.305709+00:00"
-    },
-    {
-      "symbol": "OPENUSDT",
-      "base": "OPEN",
-      "price": 0.0946,
-      "change_24h": -0.53,
-      "quote_volume_24h": 1686339.17,
-      "market_cap": 32750358.0,
-      "market_cap_source": "CoinGecko",
-      "turnover_pct": 5.15,
-      "turnover_threshold_pct": 5.0,
-      "score": 67,
-      "status": "WATCH",
-      "hard_filters": [
-        "No volume confirmation",
-        "BTC regime weak"
-      ],
-      "score_breakdown": {
-        "structure": 20,
-        "volume": 0,
-        "ema": 10,
-        "momentum": 10,
-        "accumulation": 10,
-        "liquidity": 7,
-        "turnover": 7,
-        "btc": 0,
-        "resistance_room": 3
-      },
-      "timeframes": {
-        "15m": {
-          "rsi": 58.1,
-          "volume_ratio": 0.78
-        },
-        "1h": {
-          "rsi": 57.6,
-          "ema20": 0.09298078167000115,
-          "obv_rising": true
-        },
-        "4h": {
-          "ema50": 0.09010159753662238,
-          "higher_low": true
-        }
-      },
-      "entry": 0.0946,
-      "stop_loss": 0.0923,
-      "tp1": 0.0992,
-      "tp2": 0.1015,
-      "tp3": 0.1038,
-      "position_usd": 250.0,
-      "risk_pct": 0.75,
-      "resistance_room_pct": 2.43,
-      "updated_at": "2026-11-12T11:54:13.986547+00:00"
-    }
-  ]
+  "candidates": []
 }
