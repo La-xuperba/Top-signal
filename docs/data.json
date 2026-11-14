@@ -1,26 +1,26 @@
 {
-  "updated_at": "2026-11-14T20:07:27.234887+00:00",
+  "updated_at": "2026-11-14T23:56:37.324660+00:00",
   "scan": {
     "eligible_pairs": 509,
     "analyzed_pairs": 508,
-    "watch_count": 1,
+    "watch_count": 2,
     "buy_candidates": 0,
     "btc_bullish": false,
-    "duration_seconds": 13.9,
-    "scan_count": 41
+    "duration_seconds": 13.4,
+    "scan_count": 42
   },
   "candidates": [
     {
-      "symbol": "ATUSDT",
-      "base": "AT",
-      "price": 0.098,
-      "change_24h": 1.76,
-      "quote_volume_24h": 735429.65,
-      "market_cap": 22578078.0,
-      "market_cap_source": "CoinGecko",
-      "turnover_pct": 3.26,
-      "turnover_threshold_pct": 5.0,
-      "score": 69,
+      "symbol": "UVXYBUSDT",
+      "base": "UVXYB",
+      "price": 18.95,
+      "change_24h": 0.27,
+      "quote_volume_24h": 37262.14,
+      "market_cap": null,
+      "market_cap_source": null,
+      "turnover_pct": null,
+      "turnover_threshold_pct": null,
+      "score": 67,
       "status": "WATCH",
       "hard_filters": [
         "Major resistance too close",
@@ -30,7 +30,7 @@
         "structure": 14,
         "volume": 15,
         "ema": 10,
-        "momentum": 10,
+        "momentum": 8,
         "accumulation": 10,
         "liquidity": 10,
         "turnover": 0,
@@ -39,28 +39,79 @@
       },
       "timeframes": {
         "15m": {
-          "rsi": 66.1,
-          "volume_ratio": 3.08
+          "rsi": 62.3,
+          "volume_ratio": 2.83
         },
         "1h": {
-          "rsi": 66.2,
-          "ema20": 0.09554821506125943,
+          "rsi": 64.6,
+          "ema20": 18.769106163602352,
           "obv_rising": true
         },
         "4h": {
-          "ema50": 0.09722625049169877,
+          "ema50": 18.802168626989097,
           "higher_low": true
         }
       },
-      "entry": 0.0985,
-      "stop_loss": 0.0942,
-      "tp1": 0.1071,
-      "tp2": 0.1114,
-      "tp3": 0.1157,
-      "position_usd": 171.8,
+      "entry": 18.95,
+      "stop_loss": 18.77,
+      "tp1": 19.31,
+      "tp2": 19.49,
+      "tp3": 19.67,
+      "position_usd": 250.0,
       "risk_pct": 0.75,
-      "resistance_room_pct": 0.31,
-      "updated_at": "2026-11-14T20:07:24.659805+00:00"
+      "resistance_room_pct": 0.32,
+      "updated_at": "2026-11-14T23:56:37.171385+00:00"
+    },
+    {
+      "symbol": "ALLOUSDT",
+      "base": "ALLO",
+      "price": 0.1561,
+      "change_24h": 4.62,
+      "quote_volume_24h": 1311267.1,
+      "market_cap": 65932167.0,
+      "market_cap_source": "CoinGecko",
+      "turnover_pct": 1.99,
+      "turnover_threshold_pct": 5.0,
+      "score": 65.2,
+      "status": "WATCH",
+      "hard_filters": [
+        "BTC regime weak"
+      ],
+      "score_breakdown": {
+        "structure": 14,
+        "volume": 13.2,
+        "ema": 10,
+        "momentum": 8,
+        "accumulation": 10,
+        "liquidity": 10,
+        "turnover": 0,
+        "btc": 0,
+        "resistance_room": 0
+      },
+      "timeframes": {
+        "15m": {
+          "rsi": 62.6,
+          "volume_ratio": 2.32
+        },
+        "1h": {
+          "rsi": 57.1,
+          "ema20": 0.15299490165816274,
+          "obv_rising": true
+        },
+        "4h": {
+          "ema50": 0.15214956469419375,
+          "higher_low": true
+        }
+      },
+      "entry": 0.1567,
+      "stop_loss": 0.1462,
+      "tp1": 0.1777,
+      "tp2": 0.1882,
+      "tp3": 0.1987,
+      "position_usd": 111.93,
+      "risk_pct": 0.75,
+      "resistance_room_pct": 1.54,
+      "updated_at": "2026-11-14T23:56:34.924251+00:00"
     }
   ]
 }
