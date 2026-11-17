@@ -1,66 +1,65 @@
 {
-  "updated_at": "2026-11-16T21:16:05.024031+00:00",
+  "updated_at": "2026-11-17T04:06:55.045567+00:00",
   "scan": {
     "eligible_pairs": 509,
     "analyzed_pairs": 507,
     "watch_count": 1,
     "buy_candidates": 0,
     "btc_bullish": false,
-    "duration_seconds": 15.5,
-    "scan_count": 49
+    "duration_seconds": 13.0,
+    "scan_count": 50
   },
   "candidates": [
     {
-      "symbol": "ERAUSDT",
-      "base": "ERA",
-      "price": 0.075,
-      "change_24h": 7.45,
-      "quote_volume_24h": 3856908.1,
-      "market_cap": 13073341.0,
-      "market_cap_source": "CoinGecko",
-      "turnover_pct": 29.5,
-      "turnover_threshold_pct": 5.0,
-      "score": 66,
+      "symbol": "TKOUSDT",
+      "base": "TKO",
+      "price": 0.0418,
+      "change_24h": 11.47,
+      "quote_volume_24h": 532909.55,
+      "market_cap": null,
+      "market_cap_source": null,
+      "turnover_pct": null,
+      "turnover_threshold_pct": null,
+      "score": 66.1,
       "status": "WATCH",
       "hard_filters": [
-        "No volume confirmation",
         "BTC regime weak"
       ],
       "score_breakdown": {
         "structure": 14,
-        "volume": 0,
+        "volume": 13.1,
         "ema": 10,
         "momentum": 10,
-        "accumulation": 10,
-        "liquidity": 7,
-        "turnover": 10,
+        "accumulation": 4,
+        "liquidity": 10,
+        "turnover": 0,
         "btc": 0,
         "resistance_room": 5
       },
       "timeframes": {
         "15m": {
-          "rsi": 61.4,
-          "volume_ratio": 0.02
+          "rsi": 64.2,
+          "volume_ratio": 2.31
         },
         "1h": {
-          "rsi": 66.5,
-          "ema20": 0.07135101053684828,
-          "obv_rising": true
+          "rsi": 62.9,
+          "ema20": 0.03994898815946385,
+          "obv_rising": false
         },
         "4h": {
-          "ema50": 0.07454689326012941,
+          "ema50": 0.04123614998874976,
           "higher_low": true
         }
       },
-      "entry": 0.075,
-      "stop_loss": 0.0687,
-      "tp1": 0.0876,
-      "tp2": 0.0939,
-      "tp3": 0.1002,
-      "position_usd": 89.29,
+      "entry": 0.0418,
+      "stop_loss": 0.039,
+      "tp1": 0.0474,
+      "tp2": 0.0502,
+      "tp3": 0.053,
+      "position_usd": 111.96,
       "risk_pct": 0.75,
-      "resistance_room_pct": 4.4,
-      "updated_at": "2026-11-16T21:16:01.234315+00:00"
+      "resistance_room_pct": 13.64,
+      "updated_at": "2026-11-17T04:06:48.148267+00:00"
     }
   ]
 }
