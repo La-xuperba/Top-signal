@@ -1,26 +1,77 @@
 {
-  "updated_at": "2026-11-20T01:17:48.025945+00:00",
+  "updated_at": "2026-11-20T08:59:13.291238+00:00",
   "scan": {
     "eligible_pairs": 516,
     "analyzed_pairs": 510,
-    "watch_count": 1,
+    "watch_count": 4,
     "buy_candidates": 0,
     "btc_bullish": false,
-    "duration_seconds": 12.0,
-    "scan_count": 59
+    "duration_seconds": 11.0,
+    "scan_count": 60
   },
   "candidates": [
     {
-      "symbol": "XUSDUSDT",
-      "base": "XUSD",
-      "price": 1.0011,
-      "change_24h": 0.01,
-      "quote_volume_24h": 3532271.54,
-      "market_cap": 41183113.0,
+      "symbol": "GMEBUSDT",
+      "base": "GMEB",
+      "price": 27.18,
+      "change_24h": 2.41,
+      "quote_volume_24h": 149393.27,
+      "market_cap": null,
+      "market_cap_source": null,
+      "turnover_pct": null,
+      "turnover_threshold_pct": null,
+      "score": 73,
+      "status": "WATCH",
+      "hard_filters": [
+        "BTC regime weak"
+      ],
+      "score_breakdown": {
+        "structure": 20,
+        "volume": 15,
+        "ema": 10,
+        "momentum": 8,
+        "accumulation": 10,
+        "liquidity": 10,
+        "turnover": 0,
+        "btc": 0,
+        "resistance_room": 0
+      },
+      "timeframes": {
+        "15m": {
+          "rsi": 57.4,
+          "volume_ratio": 2.93
+        },
+        "1h": {
+          "rsi": 65.0,
+          "ema20": 26.98331824745793,
+          "obv_rising": true
+        },
+        "4h": {
+          "ema50": 25.890040720776398,
+          "higher_low": true
+        }
+      },
+      "entry": 27.19,
+      "stop_loss": 26.986075,
+      "tp1": 27.59785,
+      "tp2": 27.801775,
+      "tp3": 28.0057,
+      "position_usd": 250.0,
+      "risk_pct": 0.75,
+      "resistance_room_pct": 1.4,
+      "updated_at": "2026-11-20T08:59:12.655698+00:00"
+    },
+    {
+      "symbol": "WCTUSDT",
+      "base": "WCT",
+      "price": 0.02986,
+      "change_24h": 1.88,
+      "quote_volume_24h": 229303.81,
+      "market_cap": 14545396.0,
       "market_cap_source": "CoinGecko",
-      "turnover_pct": 8.58,
+      "turnover_pct": 1.58,
       "turnover_threshold_pct": 5.0,
-      "score": 85,
+      "score": 69,
       "status": "WATCH",
       "hard_filters": [
         "Major resistance too close",
@@ -31,36 +82,139 @@
         "volume": 15,
         "ema": 10,
         "momentum": 10,
-        "accumulation": 10,
+        "accumulation": 4,
         "liquidity": 10,
-        "turnover": 10,
+        "turnover": 0,
         "btc": 0,
         "resistance_room": 0
       },
       "timeframes": {
         "15m": {
-          "rsi": 61.3,
-          "volume_ratio": 18.29
+          "rsi": 58.4,
+          "volume_ratio": 2.74
         },
         "1h": {
-          "rsi": 54.9,
-          "ema20": 1.0010179747066563,
-          "obv_rising": true
+          "rsi": 60.4,
+          "ema20": 0.02942065925607599,
+          "obv_rising": false
         },
         "4h": {
-          "ema50": 1.0008898907220558,
+          "ema50": 0.02885266283745966,
           "higher_low": true
         }
       },
-      "entry": 1.0011,
-      "stop_loss": 0.99359175,
-      "tp1": 1.0161165,
-      "tp2": 1.02362475,
-      "tp3": 1.031133,
+      "entry": 0.02986,
+      "stop_loss": 0.02884,
+      "tp1": 0.0319,
+      "tp2": 0.03292,
+      "tp3": 0.03394,
+      "position_usd": 219.56,
+      "risk_pct": 0.75,
+      "resistance_room_pct": 0.37,
+      "updated_at": "2026-11-20T08:59:10.621966+00:00"
+    },
+    {
+      "symbol": "ACTUSDT",
+      "base": "ACT",
+      "price": 0.00902,
+      "change_24h": 0.22,
+      "quote_volume_24h": 210226.24,
+      "market_cap": null,
+      "market_cap_source": null,
+      "turnover_pct": null,
+      "turnover_threshold_pct": null,
+      "score": 69,
+      "status": "WATCH",
+      "hard_filters": [
+        "Major resistance too close",
+        "BTC regime weak"
+      ],
+      "score_breakdown": {
+        "structure": 14,
+        "volume": 15,
+        "ema": 10,
+        "momentum": 10,
+        "accumulation": 10,
+        "liquidity": 10,
+        "turnover": 0,
+        "btc": 0,
+        "resistance_room": 0
+      },
+      "timeframes": {
+        "15m": {
+          "rsi": 60.3,
+          "volume_ratio": 5.87
+        },
+        "1h": {
+          "rsi": 58.1,
+          "ema20": 0.008902608865490613,
+          "obv_rising": true
+        },
+        "4h": {
+          "ema50": 0.008967076427118054,
+          "higher_low": true
+        }
+      },
+      "entry": 0.00902,
+      "stop_loss": 0.00871,
+      "tp1": 0.00964,
+      "tp2": 0.00995,
+      "tp3": 0.01026,
+      "position_usd": 218.23,
+      "risk_pct": 0.75,
+      "resistance_room_pct": 0.44,
+      "updated_at": "2026-11-20T08:59:10.080764+00:00"
+    },
+    {
+      "symbol": "RADUSDT",
+      "base": "RAD",
+      "price": 0.215,
+      "change_24h": -0.92,
+      "quote_volume_24h": 500071.29,
+      "market_cap": 12635979.0,
+      "market_cap_source": "CoinGecko",
+      "turnover_pct": 3.96,
+      "turnover_threshold_pct": 5.0,
+      "score": 66.9,
+      "status": "WATCH",
+      "hard_filters": [
+        "BTC regime weak"
+      ],
+      "score_breakdown": {
+        "structure": 7,
+        "volume": 14.9,
+        "ema": 7,
+        "momentum": 10,
+        "accumulation": 10,
+        "liquidity": 10,
+        "turnover": 3,
+        "btc": 0,
+        "resistance_room": 5
+      },
+      "timeframes": {
+        "15m": {
+          "rsi": 59.0,
+          "volume_ratio": 2.49
+        },
+        "1h": {
+          "rsi": 51.9,
+          "ema20": 0.21391792187223266,
+          "obv_rising": true
+        },
+        "4h": {
+          "ema50": 0.218376564084916,
+          "higher_low": true
+        }
+      },
+      "entry": 0.215,
+      "stop_loss": 0.21,
+      "tp1": 0.225,
+      "tp2": 0.23,
+      "tp3": 0.235,
       "position_usd": 250.0,
       "risk_pct": 0.75,
-      "resistance_room_pct": 0.01,
-      "updated_at": "2026-11-20T01:17:44.577950+00:00"
+      "resistance_room_pct": 4.19,
+      "updated_at": "2026-11-20T08:59:08.477472+00:00"
     }
   ]
 }
